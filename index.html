@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policy & Claims Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Policy &amp; Claims Manager</h1>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="policies">Policies</button>
+      <button class="tab-btn" data-tab="claims">Claims</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== POLICIES TAB ===================== -->
+    <section id="policies" class="tab-panel active">
+
+      <div class="panel-header">
+        <h2>Policies</h2>
+        <input type="text" id="searchInput" placeholder="Search by holder name..." />
+      </div>
+
+      <form id="policyForm" class="card form-grid">
+        <h3>Add New Policy</h3>
+        <input type="text" id="policyNumber" placeholder="Policy Number (e.g. POL-1001)" required />
+        <input type="text" id="holderName" placeholder="Holder Name" required />
+        <input type="email" id="holderEmail" placeholder="Holder Email" required />
+        <select id="policyType" required>
+          <option value="">Policy Type</option>
+          <option>Health</option>
+          <option>Motor</option>
+          <option>Fire</option>
+          <option>Marine</option>
+          <option>Travel</option>
+        </select>
+        <input type="number" id="premiumAmount" placeholder="Premium Amount (₹)" min="1" step="0.01" required />
+        <label class="date-label">Start Date
+          <input type="date" id="startDate" required />
+        </label>
+        <label class="date-label">Expiry Date
+          <input type="date" id="expiryDate" required />
+        </label>
+        <button type="submit" class="btn-primary">Add Policy</button>
+      </form>
+
+      <div id="policyMessage" class="message"></div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Policy #</th>
+            <th>Holder</th>
+            <th>Type</th>
+            <th>Premium</th>
+            <th>Expiry</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="policyTableBody">
+          <!-- filled by script.js -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===================== CLAIMS TAB ===================== -->
+    <section id="claims" class="tab-panel">
+
+      <div class="panel-header">
+        <h2>Claims</h2>
+      </div>
+
+      <form id="claimForm" class="card form-grid">
+        <h3>File a New Claim</h3>
+        <select id="claimPolicySelect" required>
+          <option value="">Select Policy</option>
+        </select>
+        <input type="text" id="claimDescription" placeholder="Claim Description" required />
+        <input type="number" id="claimAmount" placeholder="Claim Amount (₹)" min="1" step="0.01" required />
+        <button type="submit" class="btn-primary">File Claim</button>
+      </form>
+
+      <div id="claimMessage" class="message"></div>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Claim #</th>
+            <th>Policy #</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Filed On</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="claimTableBody">
+          <!-- filled by script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

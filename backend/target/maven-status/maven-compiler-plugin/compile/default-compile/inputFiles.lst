@@ -1,0 +1,14 @@
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\controller\PolicyController.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\service\ClaimService.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\exception\InvalidOperationException.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\repository\ClaimRepository.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\config\WebConfig.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\controller\ClaimController.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\model\ClaimStatus.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\model\Claim.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\model\Policy.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\service\PolicyService.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\exception\GlobalExceptionHandler.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\repository\PolicyRepository.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\exception\ResourceNotFoundException.java
+M:\Insurance Project\insurance-project\backend\src\main\java\com\insurance\policyclaims\PolicyClaimsApplication.java
